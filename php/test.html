@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../html-sidebar/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/kartenstyle.css">
+
+    <style>
+	body {
+	    background-image: url('../image/background6.jpg');
+	    background-size: cover;
+	    /* Optional: Das Bild so skalieren, dass es den gesamten Hintergrund bedeckt */
+	    background-repeat: no-repeat;
+	    /* Optional: Wiederholung des Bildes deaktivieren */
+	}
+    </style>
+    <link rel="icon" type="image/png" href="../image/favicon.ico">
+
+</head>
+<header>
+    <div style="text-align: center;">
+	<a href="index.php" ><img src="../image/logoblabla.png" alt="Dein Logo" class="logo" width="970" height="275"></a>
+    </div>
+</header>
+<body>
+<form action=#>
+    <div class="container">
+	<div class="sidebar active">
+	    <div class="menu-btn">
+		<i class="ph-bold ph-caret-left"></i>
+	    </div>
+	    <div class="head">
+		<div class="user-img">
+		    <img src="../html-sidebar/user.jpg" alt="">
+		</div>
+		<div class="user-details">
+		    <p class="title">web developer</p>
+		    <p class="name">John Doe</p>
+		</div>
+	    </div>
+	    <div class="nav">
+		<div class="menu">
+		    <p class="title">Main</p>
+		    <ul>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-house-simple"></i>
+				<span class="text">Dashboard</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-user"></i>
+				<span class="text">Audienc</span>
+				<i class="arrow ph-bold ph-caret-down"></i>
+			    </a>
+			    <ul class="sub-menu">
+				<li>
+				    <a href="#">
+					<span class="text">Users</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Subscribers</span>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="active">
+			    <a href="#">
+				<i class="icon ph-bold ph-file-text"></i>
+				<span class="text">Post</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-calendar-blank"></i>
+				<span class="text">Schedules</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-chart-bar"></i>
+				<span class="text">Income</span>
+				<i class="arrow ph-bold ph-caret-down"></i>
+			    </a>
+			    <ul class="sub-menu">
+				<li>
+				    <a href="#">
+					<span class="text">Earnings</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Funds</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Declines</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Payouts</span>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+		</div>
+		<div class="menu">
+		    <p class="title">Settings</p>
+		    <ul>
+			<li>
+				<a href="#">
+					<i class="icon ph-bold ph-gear"></i>
+					<span class="text">Settings</span>
+				</a>
+				<ul class="sub-menu" style="background-color: rgba(0,0,0,.1);">
+				<li style="color:lightgray;padding-left: 10px"  >minlevel</li>
+				<li class="radio1" style="color:lightgray;padding-left: 10px" >
+					<nobr>
+					<label for="r1"><input id="r1" type = "radio" value = 0 name="minlevel"  <?php if ($minlevel == 0) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 1 name="minlevel"  <?php if ($minlevel == 1) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 2 name="minlevel"  <?php if ($minlevel == 2) echo "checked" ?> /><span/></label>
+					</nobr>
+				</li>
+				<li style="color:lightgray;padding-left: 10px" >maxlevel</li>
+				<li class="radio2" style="color:lightgray;padding-left: 10px" >
+					<nobr>
+					<label><input type = "radio" value = 0 name="maxlevel"  <?php if ($maxlevel == 0) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 1 name="maxlevel"  <?php if ($maxlevel == 1) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 2 name="maxlevel"  <?php if ($maxlevel == 2) echo "checked" ?> /><span/></label>
+					</nobr>
+				</li>	
+				<li style="color:lightgray;padding-left: 10px" >keyword</li>
+				<li style="color:lightgray;padding-left: 10px" ><input type = "text" name="keyword" value = "<?php echo $keyword ?>" style="width: 155px;" /></li>
+				<li style="color:lightgray;padding-left: 10px" ><?php echo $i ?></li>
+				</li>
+				</ul>
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	    <div class="menu">
+		<p class="title">Account</p>
+		<ul>
+		    <li>
+			<a href="acordion.html">
+			    <i class="icon ph-bold ph-info"></i>
+			    <span class="text">Help</span>
+			</a>
+		    </li>
+		    <li>
+			<a href="#">
+			    <i class="icon ph-bold ph-sign-out"></i>
+			    <span class="text">Logout</span>
+			</a>
+		    </li>
+		</ul>
+	    </div>
+	</div>
+    </div>
+    
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+	integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+	crossorigin="anonymous"></script>
+    <script src="../html-sidebar/script.js"></script>
+<div class="frage_antwort">
+	<input id="cb" type="checkbox" class="flip" />
+	<div class = "fliplabel" ><label for="cb" class="fliplabel"><img class="fliplabel" src="../image/flip.svg"/></label></div>
+	<div class="frage">
+		<img src="../image/fragezeichen.svg" class="icon_qa" />
+		<b> 1 </b>
+		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio 		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio 		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio jjj		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio j
+	</div>
+	<div class = "antwort">
+	<img src="../image/ausrufezeichen.svg" class="icon_qa" />
+		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio 		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio 		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio jjj		jiojiojio jiojio jio jio j ij ij ij oiio jio  jioij i jio jio jio j ij oi jo j i  oiji jo ij i jio j
+	</div>
+	<img class="k_icon" src='../image/schwer.svg';
+</div>
+	<input type = "hidden" name=i value = <?php echo $i + 1 ?> />
+	<input type = "submit" value=">" class="next" />
+</form>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+    <footer>
+	<div class="footer-content">
+	    <ul class="footer-links">
+		<li><a href="agb.html">AGB</a></li>
+		<li><a href="acordion.html">FAQ</a></li>
+		<li><a href="#">Kontakt</a></li>
+	    </ul>
+	    <p class="footer-email">E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+	</div>
+    </footer>
+
+</html>

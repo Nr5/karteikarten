@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- STYLESHEET -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../html-sidebar/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/kartenstyle.css">
+    
+    <link rel="stylesheet" href="../css/acordion.css">   
+    <link rel="icon" type="image/png" href="../image/logo.png">
+</head>
+<body>
+    <header>
+        <div style="text-align: center;">
+        <a href="index.php" ><img src="../image/logoblabla.png" alt="Dein Logo" class="logo" width="970" height="275"></a>
+        </div>
+    </header>
+    
+
+
+
+
+
+
+    <body>
+        <div class="container">
+            <div class="sidebar active">
+                <div class="menu-btn">
+                    <i class="ph-bold ph-caret-left"></i>
+                </div>
+                <div class="head">
+                    <div class="user-img">
+                        <img src="../html-sidebar/user.jpg" alt="">
+                    </div>
+                    <div class="user-details">
+                        <p class="title">web developer</p>
+                        <p class="name">John Doe</p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="menu">
+                        <p class="title">Main</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ph-bold ph-house-simple"></i>
+                                    <span class="text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ph-bold ph-user"></i>
+                                    <span class="text">Audienc</span>
+                                    <i class="arrow ph-bold ph-caret-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Users</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Subscribers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    <i class="icon ph-bold ph-file-text"></i>
+                                    <span class="text">Post</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ph-bold ph-calendar-blank"></i>
+                                    <span class="text">Schedules</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ph-bold ph-chart-bar"></i>
+                                    <span class="text">Income</span>
+                                    <i class="arrow ph-bold ph-caret-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Earnings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Funds</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Declines</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Payouts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p class="title">Settings</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="icon ph-bold ph-gear"></i>
+                                    <span class="text">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu">
+                    <p class="title">Account</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-info"></i>
+                                <span class="text">Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../php/login.php">
+                                <i class="icon ph-bold ph-sign-out"></i>
+                                <span class="text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+            integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+            crossorigin="anonymous"></script>
+        <script src="../html-sidebar/script.js"></script>
+    <ul id="acordion">
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"first">Was sind Wisdom Cards?</label>
+            <input type="radio" name="acordion" id="first" checked>
+            <div class="content">
+                <p>Wisdom Cards sind in Frage-und-Antwort-Form präsentierte, leicht verdauliche Wissenshappen, die dazu dienen, mehr über IT-bezogene Themen zu lernen.</p>
+            </div>
+            </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"second">Wie kann ich Wisdom Cards zum Lernen nutzen?</label>
+            <input type="radio" name="acordion" id="second">
+            <div class="content">
+                <p>Klicken Sie einfach auf eine Wisdom Card, um eine Frage im Zusammenhang mit IT anzuzeigen. Versuchen Sie, sie zu beantworten, und drehen Sie dann die Karte um, um Ihre Antwort zu überprüfen. Es ist eine unterhaltsame und interaktive Möglichkeit, Ihr Wissen zu testen. </p>
+                
+            </div>
+        </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"third"> Muss ich mich registrieren, um Wisdom Cards zu verwenden?</label>
+            <input type="radio" name="acordion" id="third">
+            <div class="content">
+                <p>Ja, um Wisdom Cards zu verwenden, ist eine Registrierung erforderlich. </p>
+                
+            </div>
+        </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"fourth"> Sind Wisdom Cards für Anfänger in der IT geeignet?</label>
+            <input type="radio" name="acordion" id="fourth">
+            <div class="content">
+                <p>Ja, unsere Wisdom Cards decken eine breite Palette von IT-Themen ab, von Anfänger- bis zu fortgeschrittenem Niveau. Egal, ob Sie ein Neuling oder ein Experte sind, Sie werden wertvolle Informationen finden. </p>
+                
+            </div>
+        </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"fifth">  Kann ich auf Wisdom Cards von meinem Mobilgerät aus zugreifen?</label>
+            <input type="radio" name="acordion" id="fifth">
+            <div class="content">
+                <p>Absolut! Unsere Website ist responsiv und kann auf verschiedenen Geräten, einschließlich Smartphones und Tablets, verwendet werden, damit Sie unterwegs lernen können. </p>
+                
+            </div>
+        </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for="sixth"> Wie oft werden neue Wisdom Cards hinzugefügt?</label>
+            <input type="radio" name="acordion" id="sixth">
+            <div class="content">
+                <p>Wir aktualisieren unsere Sammlung regelmäßig mit neuen Wisdom Cards, um den Inhalt frisch und relevant zu halten. Schauen Sie regelmäßig vorbei, um neue Fragen und Antworten zu IT-Themen zu entdecken. </p>
+       
+            </div>
+        </li>
+        <li style="background-color: rgba(0,0,0,0.8);color:lightgray;backdrop-filter:blur(200%)">
+            <label style="color: #ff80c0;" for"seventh">  Kann ich ein Thema für eine Wisdom Card vorschlagen?</label>
+            <input type="radio" name="acordion" id="seventh">
+            <div class="content">
+                <p> Ja, wir freuen uns über Vorschläge! Wenn Sie ein bestimmtes IT-Thema oder eine Frage im Sinn haben, die Sie auf unserer Website sehen möchten, kontaktieren Sie uns bitte, und wir werden prüfen, ob wir es hinzufügen können </p>
+                
+            </div>
+        </li>
+      
+    
+    </ul>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <p class="footer-email">E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+</footer>
+</div>
+
+
+</html>

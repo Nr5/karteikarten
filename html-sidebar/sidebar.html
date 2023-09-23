@@ -1,0 +1,145 @@
+    <div class="container">
+	<div class="sidebar active">
+	    <div class="menu-btn">
+		<i class="ph-bold ph-caret-left"></i>
+	    </div>
+	    <div class="head">
+		<div class="user-img">
+		    <img src="../html-sidebar/user.jpg" alt="">
+		</div>
+		<div class="user-details">
+		    <p class="title">web developer</p>
+		    <p class="name">John Doe</p>
+		</div>
+	    </div>
+	    <div class="nav">
+		<div class="menu">
+		    <p class="title">Main</p>
+		    <ul>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-house-simple"></i>
+				<span class="text">Dashboard</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-user"></i>
+				<span class="text">Audienc</span>
+				<i class="arrow ph-bold ph-caret-down"></i>
+			    </a>
+			    <ul class="sub-menu">
+				<li>
+				    <a href="#">
+					<span class="text">Users</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Subscribers</span>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+			<li class="active">
+			    <a href="#">
+				<i class="icon ph-bold ph-file-text"></i>
+				<span class="text">Post</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-calendar-blank"></i>
+				<span class="text">Schedules</span>
+			    </a>
+			</li>
+			<li>
+			    <a href="#">
+				<i class="icon ph-bold ph-chart-bar"></i>
+				<span class="text">Income</span>
+				<i class="arrow ph-bold ph-caret-down"></i>
+			    </a>
+			    <ul class="sub-menu">
+				<li>
+				    <a href="#">
+					<span class="text">Earnings</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Funds</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Declines</span>
+				    </a>
+				</li>
+				<li>
+				    <a href="#">
+					<span class="text">Payouts</span>
+				    </a>
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+		</div>
+		<div class="menu">
+		    <p class="title">Settings</p>
+		    <ul>
+			<li>
+				<a href="#">
+					<i class="icon ph-bold ph-gear"></i>
+					<span class="text">Settings</span>
+				</a>
+				<ul class="sub-menu" style="background-color: rgba(0,0,0,.1);">
+				<li style="color:lightgray;padding-left: 10px"  >minlevel</li>
+				<li class="radio1"style="color:lightgray;padding-left: 10px" >
+					<nobr>
+					<label for="r1"><input id="r1" type = "radio" value = 0 name="minlevel"  <?php if ($minlevel == 0) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 1 name="minlevel"  <?php if ($minlevel == 1) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 2 name="minlevel"  <?php if ($minlevel == 2) echo "checked" ?> /><span/></label>
+					</nobr>
+				</li>
+				<li style="color:lightgray;padding-left: 10px" >maxlevel</li>
+				<li class="radio2" style="color:lightgray;padding-left: 10px" >
+					<nobr>
+					<label><input type = "radio" value = 0 name="maxlevel"  <?php if ($maxlevel == 0) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 1 name="maxlevel"  <?php if ($maxlevel == 1) echo "checked" ?> /><span/></label>
+					<label><input type = "radio" value = 2 name="maxlevel"  <?php if ($maxlevel == 2) echo "checked" ?> /><span/></label>
+					</nobr>
+				</li>	
+				<li style="color:lightgray;padding-left: 10px" >keyword</li>
+				<li style="color:lightgray;padding-left: 10px" ><input type = "text" name="keyword" value = "<?php echo $keyword ?>" style="width: 155px;" /></li>
+				<li style="color:lightgray;padding-left: 10px" ><?php echo $i ?></li>
+				</li>
+				</ul>
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	    <div class="menu">
+		<p class="title">Account</p>
+		<ul>
+		    <li>
+			<a href="acordion.html">
+			    <i class="icon ph-bold ph-info"></i>
+			    <span class="text">Help</span>
+			</a>
+		    </li>
+		    <li>
+			<a href="#">
+			    <i class="icon ph-bold ph-sign-out"></i>
+			    <span class="text">Logout</span>
+			</a>
+		    </li>
+		</ul>
+	    </div>
+	</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+	integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+	crossorigin="anonymous"></script>
+    <script src="../html-sidebar/script.js"></script>
+
+

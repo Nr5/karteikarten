@@ -1,0 +1,220 @@
+.frage_antwort{
+	/*background-image: url('../image/karteikarte.svg');
+	background-size: cover;
+	*/
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position:absolute; 
+    width: 85%;
+    height:92%;
+	z-index: 0;
+	align: left;
+    float:left;
+}
+
+
+.frage {
+	overflow: scroll;
+	text-align: left;
+	padding: 5vw;
+
+	float: left;
+}
+.antwort {
+	position: absolute;
+	visibility: hidden ;
+	overflow: scroll;
+	text-align: left;
+	padding: 5vw;
+
+	float: left;
+}
+
+.k_icon {
+    position:absolute;
+	height: 2vw;
+	display: flow;
+	top:3%;
+	right:3%;
+	align: right;
+
+}
+.icon_qa{
+    position:absolute;
+	height: 64px;
+    top:3%;
+	left:3%;
+	align: right;
+}
+
+.neue_frage{
+	display:inline-block;
+	padding: 1px;
+	margin: 1px;
+	border: none;
+
+}
+.index{
+	color:whitesmoke;
+	margin 2px;
+	padding 2px;
+	float:right
+}
+.next{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		    
+	z-index: 1;
+	border: none;
+	cursor: pointer;
+	width: 10%; 
+	height: 100%; 
+    float:right;
+}
+.next:hover{
+	border: none;
+	filter: brightness(1.1);
+}
+.next:active{
+	border: none;
+
+	filter: brightness(1.1);
+}
+.next:focus{
+	border: none;
+	filter: brightness(1.1);
+}
+
+.flip{
+	z-index: 255;
+	visibility: hidden;
+}
+.flip:checked + .fliplabel + .frage{
+	visibility: hidden;
+}
+.flip:checked + .fliplabel + .frage + .antwort{
+	visibility: visible;
+}
+.fliplabel{
+    position:absolute;
+	z-index: 255;
+	width: 30px;
+	height: 30px;
+	right:3%;
+	bottom:3%;
+}
+.radio1 {
+	align: center;
+}
+.radio1 input[type='radio'] {
+	display: none;
+	/*removes original button*/
+}
+.radio1 label span {
+	/*styles outer circle*/
+	content: "";
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 20px;
+	background-color: gray;
+	margin: 0px;
+	padding: 0px;
+}
+
+.radio1 label {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio1 label input[type='radio'][value='0']:checked+span {
+	/*styles inside circle*/
+	background-color: green;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio1 label input[type='radio'][value='1']:checked+span {
+	/*styles inside circle*/
+	background-color: yellow;
+	padding: 0px;
+	margin: 0px;
+}
+.radio1 label input[type='radio'][value='2']:checked+span {
+	/*styles inside circle*/
+	background-color: red;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio1 label input[type='radio'][value=0]+span {
+	/*styles inside circle*/
+	left:0px;
+	right:0px;
+	padding: 0px;
+	margin: 0px;
+	background-color: gray;
+	border:inset;
+	border-color:black;
+	border-width:1px;
+}
+.radio2 {
+	position: absolute;
+	align: center;
+}
+.radio2 input[type='radio'] {
+	display: none;
+	/*removes original button*/
+}
+.radio2 label span {
+	/*styles outer circle*/
+	content: "";
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 20px;
+	background-color: gray;
+	margin: 0px;
+	padding: 0px;
+}
+
+.radio2 label {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio2 label input[type='radio'][value='0']:checked+span {
+	/*styles inside circle*/
+	background-color: green;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio2 label input[type='radio'][value='1']:checked+span {
+	/*styles inside circle*/
+	background-color: yellow;
+	padding: 0px;
+	margin: 0px;
+}
+.radio2 label input[type='radio'][value='2']:checked+span {
+	/*styles inside circle*/
+	background-color: red;
+	padding: 0px;
+	margin: 0px;
+}
+
+.radio2 label input[type='radio'][value=0]+span {
+	/*styles inside circle*/
+	left:0px;
+	right:0px;
+	padding: 0px;
+	margin: 0px;
+	background-color: gray;
+	border:inset;
+	border-color:black;
+	border-width:1px;
+}

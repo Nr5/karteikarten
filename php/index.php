@@ -92,9 +92,9 @@ $id = $arr[$random][$idid];
 <form action=#>
 <?php require('../html-sidebar/sidebar.html'); ?>
 
-<div style="background:black">
+<div class="centered-container">
 <div class="frage_antwort">
-        
+
         <!--<div class = "clicker" tabindex="1">Antwort anzeigen</div>-->
         <input id="cb" type="checkbox" class="flip" />
         <div class = "fliplabel" ><label for="cb" class="fliplabel"><img class="fliplabel" src="../image/flip.svg"/></label></div>
@@ -122,7 +122,8 @@ $id = $arr[$random][$idid];
        ?> />
 </div>
 
-	<input type = "hidden" name=i value = <?php echo $i + 1 ?> />
+    <input type = "hidden" name=i value = <?php echo $i + 1 ?> />
+
     <input type = "submit" value=">" class="next" />
 </div>
 </form>

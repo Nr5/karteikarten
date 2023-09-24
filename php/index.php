@@ -92,7 +92,7 @@ $id = $arr[$random][$idid];
 <form action=#>
 <?php require('../html-sidebar/sidebar.html'); ?>
 
-<div class="centered-container;background-color:transparent;border:none;">
+<div class="centered-container">
 <div class="frage_antwort">
 
         <!--<div class = "clicker" tabindex="1">Antwort anzeigen</div>-->
